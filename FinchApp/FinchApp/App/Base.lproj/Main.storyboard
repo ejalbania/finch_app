@@ -33,13 +33,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-ttc" translatesAutoresizingMaskIntoConstraints="NO" id="b3N-0Q-tpF">
-                                <rect key="frame" x="340" y="108" width="62" height="62"/>
+                                <rect key="frame" x="348" y="108" width="54" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="b3N-0Q-tpF" secondAttribute="height" id="oRB-8f-h9o"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toronto Transit Commission" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh6-EK-kN9">
-                                <rect key="frame" x="12" y="170" width="316" height="76.5"/>
+                                <rect key="frame" x="12" y="162" width="324" height="76.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-oA-Vr7">
-                                <rect key="frame" x="0.0" y="259" width="414" height="520"/>
+                                <rect key="frame" x="0.0" y="250.5" width="414" height="528.5"/>
                                 <connections>
                                     <segue destination="u1p-Kr-epB" kind="embed" identifier="sendFinchModel" id="hxz-LM-Tu2"/>
                                 </connections>
@@ -69,7 +69,7 @@
                             <constraint firstItem="xKK-cb-T4h" firstAttribute="bottom" secondItem="Isb-x1-RQW" secondAttribute="bottom" id="YJb-dP-baP"/>
                             <constraint firstItem="b3N-0Q-tpF" firstAttribute="leading" secondItem="jh6-EK-kN9" secondAttribute="trailing" constant="12" id="aEG-xV-chn"/>
                             <constraint firstItem="jh6-EK-kN9" firstAttribute="leading" secondItem="xKK-cb-T4h" secondAttribute="leading" constant="12" id="cAh-46-WlG"/>
-                            <constraint firstItem="b3N-0Q-tpF" firstAttribute="width" secondItem="mCj-FM-5OS" secondAttribute="width" multiplier="0.15" id="eAT-4v-YnX"/>
+                            <constraint firstItem="b3N-0Q-tpF" firstAttribute="width" secondItem="mCj-FM-5OS" secondAttribute="width" multiplier="0.13" id="eAT-4v-YnX"/>
                             <constraint firstItem="xKK-cb-T4h" firstAttribute="trailing" secondItem="b3N-0Q-tpF" secondAttribute="trailing" constant="12" id="n8a-Ka-5DC"/>
                             <constraint firstItem="xKK-cb-T4h" firstAttribute="trailing" secondItem="Pjr-oA-Vr7" secondAttribute="trailing" id="nBz-pD-nIh"/>
                             <constraint firstItem="xKK-cb-T4h" firstAttribute="trailing" secondItem="Isb-x1-RQW" secondAttribute="trailing" id="ob6-KK-QZF"/>
