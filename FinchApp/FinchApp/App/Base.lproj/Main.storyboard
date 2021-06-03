@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t7y-el-tKw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="EGW-AN-8ve">
+            <objects>
+                <navigationController id="t7y-el-tKw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0lz-Es-sPj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PIC-CK-wrW" kind="relationship" relationship="rootViewController" id="YyG-6y-FIQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCx-Cl-ynV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-872" y="-22"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="b6H-em-4LR">
+            <objects>
+                <viewController id="PIC-CK-wrW" customClass="DashboardViewController" customModule="FinchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mCj-FM-5OS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-ttc" translatesAutoresizingMaskIntoConstraints="NO" id="b3N-0Q-tpF">
+                                <rect key="frame" x="340" y="108" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b3N-0Q-tpF" secondAttribute="height" id="oRB-8f-h9o"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toronto Transit Commission" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh6-EK-kN9">
+                                <rect key="frame" x="12" y="170" width="316" height="76.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isb-x1-RQW">
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Isb-x1-RQW" secondAttribute="height" multiplier="5" id="mhm-5I-DSq"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-oA-Vr7">
+                                <rect key="frame" x="0.0" y="259" width="414" height="520"/>
+                                <connections>
+                                    <segue destination="u1p-Kr-epB" kind="embed" identifier="sendFinchModel" id="hxz-LM-Tu2"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xKK-cb-T4h"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pjr-oA-Vr7" firstAttribute="top" secondItem="jh6-EK-kN9" secondAttribute="bottom" constant="12" id="7Nr-ny-mOV"/>
+                            <constraint firstItem="jh6-EK-kN9" firstAttribute="top" secondItem="b3N-0Q-tpF" secondAttribute="bottom" id="9n9-zg-mgk"/>
+                            <constraint firstItem="Pjr-oA-Vr7" firstAttribute="leading" secondItem="xKK-cb-T4h" secondAttribute="leading" id="H77-xr-cAw"/>
+                            <constraint firstItem="Isb-x1-RQW" firstAttribute="top" secondItem="Pjr-oA-Vr7" secondAttribute="bottom" id="K9K-AP-YRT"/>
+                            <constraint firstItem="b3N-0Q-tpF" firstAttribute="top" secondItem="xKK-cb-T4h" secondAttribute="top" constant="20" id="NDH-Bj-c9L"/>
+                            <constraint firstItem="xKK-cb-T4h" firstAttribute="bottom" secondItem="Isb-x1-RQW" secondAttribute="bottom" id="YJb-dP-baP"/>
+                            <constraint firstItem="b3N-0Q-tpF" firstAttribute="leading" secondItem="jh6-EK-kN9" secondAttribute="trailing" constant="12" id="aEG-xV-chn"/>
+                            <constraint firstItem="jh6-EK-kN9" firstAttribute="leading" secondItem="xKK-cb-T4h" secondAttribute="leading" constant="12" id="cAh-46-WlG"/>
+                            <constraint firstItem="b3N-0Q-tpF" firstAttribute="width" secondItem="mCj-FM-5OS" secondAttribute="width" multiplier="0.15" id="eAT-4v-YnX"/>
+                            <constraint firstItem="xKK-cb-T4h" firstAttribute="trailing" secondItem="b3N-0Q-tpF" secondAttribute="trailing" constant="12" id="n8a-Ka-5DC"/>
+                            <constraint firstItem="xKK-cb-T4h" firstAttribute="trailing" secondItem="Pjr-oA-Vr7" secondAttribute="trailing" id="nBz-pD-nIh"/>
+                            <constraint firstItem="xKK-cb-T4h" firstAttribute="trailing" secondItem="Isb-x1-RQW" secondAttribute="trailing" id="ob6-KK-QZF"/>
+                            <constraint firstItem="Isb-x1-RQW" firstAttribute="leading" secondItem="xKK-cb-T4h" secondAttribute="leading" id="uai-8s-gkL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mhP-xN-ci8"/>
+                    <connections>
+                        <outlet property="footerView" destination="Isb-x1-RQW" id="XCb-qs-asK"/>
+                        <outlet property="stationContainerView" destination="Pjr-oA-Vr7" id="hYb-a6-cBb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mch-Jr-dcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="-22.098214285714285"/>
+        </scene>
+        <!--Station Pages View Controller-->
+        <scene sceneID="K9e-vg-6ix">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="20" navigationOrientation="horizontal" spineLocation="none" id="u1p-Kr-epB" customClass="StationPagesViewController" customModule="FinchApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcR-nB-U3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-22"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-ttc" width="92.5" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
