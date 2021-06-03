@@ -150,6 +150,7 @@ class DashboardViewController: UIViewController, NVActivityIndicatorViewable {
         destination.setContent(model: transits)        
           .set(delegate: self)
       }
+      self.stationPagesViewController = destination
     default:
       return
     }

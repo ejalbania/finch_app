@@ -47,7 +47,9 @@ class StationPagesViewController: UIPageViewController {
   fileprivate func reloadContent() {
     if let model = getModel(from: nil, to: .forward) {
       let vc = StationViewController(model: model)
-      self.setViewControllers([vc], direction: .forward, animated: true)
+      self.setViewControllers([vc], direction: .forward, animated: true) { _ in 
+        self._delegate?.stationPages(didSwitchTo: vc)
+      }
     }
   }
   
@@ -121,7 +123,8 @@ extension StationPagesViewController {
     }
     
     let vc = StationViewController(model: model)
-    let direction: NavigationDirection = currentIndex > index ? .forward: .reverse
+    let direction: NavigationDirection = currentIndex > index ? .reverse: .forward
+    self._delegate?.stationPages(didSwitchTo: vc)
     self.setViewControllers([vc], direction: direction, animated: true)
   }
 }
