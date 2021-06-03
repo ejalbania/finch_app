@@ -6,7 +6,13 @@ target 'FinchApp' do
   use_frameworks!
 
   # Pods for FinchApp
-
+  pod 'Moya/RxSwift'
+  pod 'RxSwift'
+  pod 'HTTPStatusCodes'
+  pod 'SwiftyJSON'
+  pod 'NVActivityIndicatorView', '4.4.0'
+  pod 'SnapKit', '4.2.0'
+ 
   target 'FinchAppTests' do
     inherit! :search_paths
     # Pods for testing

@@ -3,19 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0E279AC80959FEEB990E73EA /* Pods_FinchApp_FinchAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275B42F7D885183116BA52F2 /* Pods_FinchApp_FinchAppUITests.framework */; };
 		B1484CA82665BE47003689D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1484CA72665BE47003689D2 /* AppDelegate.swift */; };
 		B1484CAA2665BE47003689D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1484CA92665BE47003689D2 /* SceneDelegate.swift */; };
-		B1484CAC2665BE47003689D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1484CAB2665BE47003689D2 /* ViewController.swift */; };
+		B1484CAC2665BE47003689D2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1484CAB2665BE47003689D2 /* DashboardViewController.swift */; };
 		B1484CAF2665BE47003689D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1484CAD2665BE47003689D2 /* Main.storyboard */; };
 		B1484CB12665BE49003689D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1484CB02665BE49003689D2 /* Assets.xcassets */; };
 		B1484CB42665BE49003689D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1484CB22665BE49003689D2 /* LaunchScreen.storyboard */; };
 		B1484CBF2665BE49003689D2 /* FinchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1484CBE2665BE49003689D2 /* FinchAppTests.swift */; };
 		B1484CCA2665BE49003689D2 /* FinchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1484CC92665BE49003689D2 /* FinchAppUITests.swift */; };
+		B155E5B32666E805002C873B /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155E5B22666E805002C873B /* UIColor+extensions.swift */; };
+		B155E5BB2666E8A6002C873B /* Int+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B155E5BA2666E8A6002C873B /* Int+extension.swift */; };
+		B1A2EFFE2667B6E600CAB5C2 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2EFFD2667B6E600CAB5C2 /* StationViewModel.swift */; };
+		B1A2F0192667DB2100CAB5C2 /* BehaviorSubject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2F0182667DB2100CAB5C2 /* BehaviorSubject+extension.swift */; };
+		B1A2F02C2667DF8F00CAB5C2 /* TitleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2F02B2667DF8F00CAB5C2 /* TitleCardView.swift */; };
+		B1A2F0312667FFCA00CAB5C2 /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2F0302667FFCA00CAB5C2 /* operators.swift */; };
+		B1A2F036266802E800CAB5C2 /* Collection+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2F035266802E800CAB5C2 /* Collection+extension.swift */; };
+		B1A2F03B26685D6E00CAB5C2 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2F03A26685D6E00CAB5C2 /* UIView+extension.swift */; };
+		B1A2F0492668696D00CAB5C2 /* RouteCardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2F0472668696D00CAB5C2 /* RouteCardCellView.swift */; };
+		B1A2F04A2668696D00CAB5C2 /* RouteCardCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1A2F0482668696D00CAB5C2 /* RouteCardCellView.xib */; };
+		B1A2F04F266895B900CAB5C2 /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A2F04E266895B900CAB5C2 /* Date+extension.swift */; };
+		B1DA0BC82665E8AD00F98A53 /* FinchAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA0BC72665E8AD00F98A53 /* FinchAPIRequest.swift */; };
+		B1DA0BCE2665E93500F98A53 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA0BCD2665E93500F98A53 /* URL+extension.swift */; };
+		B1DA0BD32665F15200F98A53 /* FinchAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA0BD22665F15200F98A53 /* FinchAPIService.swift */; };
+		B1DA0BE82665FC1100F98A53 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA0BE72665FC1100F98A53 /* DashboardViewModel.swift */; };
+		B1EC7002266731820028E351 /* CGColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC7001266731820028E351 /* CGColor+extension.swift */; };
+		B1EC700726673AF50028E351 /* UIFont+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC700626673AF50028E351 /* UIFont+extensions.swift */; };
+		B1EC70342667A8C30028E351 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC70322667A8C30028E351 /* StationViewController.swift */; };
+		B1EC70352667A8C30028E351 /* StationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EC70332667A8C30028E351 /* StationViewController.xib */; };
+		B1EC70402667A9CD0028E351 /* StationPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC703F2667A9CD0028E351 /* StationPagesViewController.swift */; };
 		D7672A0ECF2D68679422707E /* Pods_FinchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F35BDA70DACEE78AD4CC4F /* Pods_FinchApp.framework */; };
 		EBCBCACA5793A15B6062EC53 /* Pods_FinchAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E2A0485AC22F015858A078 /* Pods_FinchAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +65,7 @@
 		B1484CA42665BE47003689D2 /* FinchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1484CA72665BE47003689D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1484CA92665BE47003689D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B1484CAB2665BE47003689D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1484CAB2665BE47003689D2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		B1484CAE2665BE47003689D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1484CB02665BE49003689D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1484CB32665BE49003689D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +76,26 @@
 		B1484CC52665BE49003689D2 /* FinchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1484CC92665BE49003689D2 /* FinchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinchAppUITests.swift; sourceTree = "<group>"; };
 		B1484CCB2665BE49003689D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B155E5B22666E805002C873B /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		B155E5BA2666E8A6002C873B /* Int+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extension.swift"; sourceTree = "<group>"; };
+		B1A2EFFD2667B6E600CAB5C2 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		B1A2F0182667DB2100CAB5C2 /* BehaviorSubject+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BehaviorSubject+extension.swift"; sourceTree = "<group>"; };
+		B1A2F02B2667DF8F00CAB5C2 /* TitleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCardView.swift; sourceTree = "<group>"; };
+		B1A2F0302667FFCA00CAB5C2 /* operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
+		B1A2F035266802E800CAB5C2 /* Collection+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+extension.swift"; sourceTree = "<group>"; };
+		B1A2F03A26685D6E00CAB5C2 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		B1A2F0472668696D00CAB5C2 /* RouteCardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCardCellView.swift; sourceTree = "<group>"; };
+		B1A2F0482668696D00CAB5C2 /* RouteCardCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteCardCellView.xib; sourceTree = "<group>"; };
+		B1A2F04E266895B900CAB5C2 /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
+		B1DA0BC72665E8AD00F98A53 /* FinchAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinchAPIRequest.swift; sourceTree = "<group>"; };
+		B1DA0BCD2665E93500F98A53 /* URL+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
+		B1DA0BD22665F15200F98A53 /* FinchAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinchAPIService.swift; sourceTree = "<group>"; };
+		B1DA0BE72665FC1100F98A53 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		B1EC7001266731820028E351 /* CGColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+extension.swift"; sourceTree = "<group>"; };
+		B1EC700626673AF50028E351 /* UIFont+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+extensions.swift"; sourceTree = "<group>"; };
+		B1EC70322667A8C30028E351 /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
+		B1EC70332667A8C30028E351 /* StationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationViewController.xib; sourceTree = "<group>"; };
+		B1EC703F2667A9CD0028E351 /* StationPagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPagesViewController.swift; sourceTree = "<group>"; };
 		C17188743664575F3A124E7D /* Pods-FinchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchApp.debug.xcconfig"; path = "Target Support Files/Pods-FinchApp/Pods-FinchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D3F35BDA70DACEE78AD4CC4F /* Pods_FinchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93899BFF7F855D6AD2EC074 /* Pods-FinchAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinchAppTests.release.xcconfig"; path = "Target Support Files/Pods-FinchAppTests/Pods-FinchAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,8 +151,18 @@
 				788314508630FE5312F04E9D /* Pods-FinchAppTests.debug.xcconfig */,
 				D93899BFF7F855D6AD2EC074 /* Pods-FinchAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B105038D2665E3FF0030101F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B1484CA72665BE47003689D2 /* AppDelegate.swift */,
+				B1484CA92665BE47003689D2 /* SceneDelegate.swift */,
+				B1484CAD2665BE47003689D2 /* Main.storyboard */,
+				B1484CB22665BE49003689D2 /* LaunchScreen.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		B1484C9B2665BE47003689D2 = {
@@ -140,13 +190,13 @@
 		B1484CA62665BE47003689D2 /* FinchApp */ = {
 			isa = PBXGroup;
 			children = (
-				B1484CA72665BE47003689D2 /* AppDelegate.swift */,
-				B1484CA92665BE47003689D2 /* SceneDelegate.swift */,
-				B1484CAB2665BE47003689D2 /* ViewController.swift */,
-				B1484CAD2665BE47003689D2 /* Main.storyboard */,
-				B1484CB02665BE49003689D2 /* Assets.xcassets */,
-				B1484CB22665BE49003689D2 /* LaunchScreen.storyboard */,
 				B1484CB52665BE49003689D2 /* Info.plist */,
+				B105038D2665E3FF0030101F /* App */,
+				B1DA0BCC2665E92200F98A53 /* Utils */,
+				B1DA0BC32665E72400F98A53 /* Networking */,
+				B1DA0BD72665FB7700F98A53 /* Modules */,
+				B155E5C82666F4EB002C873B /* Reusables */,
+				B1484CB02665BE49003689D2 /* Assets.xcassets */,
 			);
 			path = FinchApp;
 			sourceTree = "<group>";
@@ -169,6 +219,119 @@
 			path = FinchAppUITests;
 			sourceTree = "<group>";
 		};
+		B155E5B12666E7EC002C873B /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1A2F0172667DB0D00CAB5C2 /* RxSwift */,
+				B155E5B22666E805002C873B /* UIColor+extensions.swift */,
+				B155E5BA2666E8A6002C873B /* Int+extension.swift */,
+				B1DA0BCD2665E93500F98A53 /* URL+extension.swift */,
+				B1EC7001266731820028E351 /* CGColor+extension.swift */,
+				B1EC700626673AF50028E351 /* UIFont+extensions.swift */,
+				B1A2F03A26685D6E00CAB5C2 /* UIView+extension.swift */,
+				B1A2F04E266895B900CAB5C2 /* Date+extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		B155E5C82666F4EB002C873B /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				B1A2F02A2667DEFD00CAB5C2 /* TitleCardView */,
+				B1A2F0472668696D00CAB5C2 /* RouteCardCellView.swift */,
+				B1A2F0482668696D00CAB5C2 /* RouteCardCellView.xib */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		B1A2F0172667DB0D00CAB5C2 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B1A2F0182667DB2100CAB5C2 /* BehaviorSubject+extension.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		B1A2F02A2667DEFD00CAB5C2 /* TitleCardView */ = {
+			isa = PBXGroup;
+			children = (
+				B1A2F02B2667DF8F00CAB5C2 /* TitleCardView.swift */,
+			);
+			path = TitleCardView;
+			sourceTree = "<group>";
+		};
+		B1DA0BC32665E72400F98A53 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B1DA0BC62665E75D00F98A53 /* models */,
+				B1DA0BC52665E73800F98A53 /* services */,
+				B1DA0BC42665E72B00F98A53 /* requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B1DA0BC42665E72B00F98A53 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				B1DA0BC72665E8AD00F98A53 /* FinchAPIRequest.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		B1DA0BC52665E73800F98A53 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				B1DA0BD22665F15200F98A53 /* FinchAPIService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		B1DA0BC62665E75D00F98A53 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B1DA0BCC2665E92200F98A53 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B155E5B12666E7EC002C873B /* extensions */,
+				B1A2F0302667FFCA00CAB5C2 /* operators.swift */,
+				B1A2F035266802E800CAB5C2 /* Collection+extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B1DA0BD72665FB7700F98A53 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B1DA0BE02665FB9200F98A53 /* Dashboard */,
+				B1EC70312667A8500028E351 /* Station */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B1DA0BE02665FB9200F98A53 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B1484CAB2665BE47003689D2 /* DashboardViewController.swift */,
+				B1DA0BE72665FC1100F98A53 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B1EC70312667A8500028E351 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				B1EC703F2667A9CD0028E351 /* StationPagesViewController.swift */,
+				B1EC70322667A8C30028E351 /* StationViewController.swift */,
+				B1A2EFFD2667B6E600CAB5C2 /* StationViewModel.swift */,
+				B1EC70332667A8C30028E351 /* StationViewController.xib */,
+			);
+			path = Station;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +343,7 @@
 				B1484CA02665BE47003689D2 /* Sources */,
 				B1484CA12665BE47003689D2 /* Frameworks */,
 				B1484CA22665BE47003689D2 /* Resources */,
+				FBCDEFB843AABD31D58B3D1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +381,7 @@
 				B1484CC12665BE49003689D2 /* Sources */,
 				B1484CC22665BE49003689D2 /* Frameworks */,
 				B1484CC32665BE49003689D2 /* Resources */,
+				0C92D111101532AFFAB7D674 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,9 +440,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A2F04A2668696D00CAB5C2 /* RouteCardCellView.xib in Resources */,
 				B1484CB42665BE49003689D2 /* LaunchScreen.storyboard in Resources */,
 				B1484CB12665BE49003689D2 /* Assets.xcassets in Resources */,
 				B1484CAF2665BE47003689D2 /* Main.storyboard in Resources */,
+				B1EC70352667A8C30028E351 /* StationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +465,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C92D111101532AFFAB7D674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinchApp-FinchAppUITests/Pods-FinchApp-FinchAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinchApp-FinchAppUITests/Pods-FinchApp-FinchAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinchApp-FinchAppUITests/Pods-FinchApp-FinchAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0FC9B19316BC9D5524014869 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +548,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FBCDEFB843AABD31D58B3D1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinchApp/Pods-FinchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinchApp/Pods-FinchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinchApp/Pods-FinchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -371,9 +572,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1484CAC2665BE47003689D2 /* ViewController.swift in Sources */,
+				B1484CAC2665BE47003689D2 /* DashboardViewController.swift in Sources */,
+				B1A2F036266802E800CAB5C2 /* Collection+extension.swift in Sources */,
+				B1A2F0192667DB2100CAB5C2 /* BehaviorSubject+extension.swift in Sources */,
+				B1DA0BD32665F15200F98A53 /* FinchAPIService.swift in Sources */,
+				B1DA0BE82665FC1100F98A53 /* DashboardViewModel.swift in Sources */,
+				B1EC70342667A8C30028E351 /* StationViewController.swift in Sources */,
+				B1A2F0492668696D00CAB5C2 /* RouteCardCellView.swift in Sources */,
+				B1A2F02C2667DF8F00CAB5C2 /* TitleCardView.swift in Sources */,
+				B155E5B32666E805002C873B /* UIColor+extensions.swift in Sources */,
 				B1484CA82665BE47003689D2 /* AppDelegate.swift in Sources */,
+				B1EC7002266731820028E351 /* CGColor+extension.swift in Sources */,
+				B1A2F03B26685D6E00CAB5C2 /* UIView+extension.swift in Sources */,
 				B1484CAA2665BE47003689D2 /* SceneDelegate.swift in Sources */,
+				B1A2F04F266895B900CAB5C2 /* Date+extension.swift in Sources */,
+				B1A2F0312667FFCA00CAB5C2 /* operators.swift in Sources */,
+				B1DA0BC82665E8AD00F98A53 /* FinchAPIRequest.swift in Sources */,
+				B1DA0BCE2665E93500F98A53 /* URL+extension.swift in Sources */,
+				B1EC700726673AF50028E351 /* UIFont+extensions.swift in Sources */,
+				B155E5BB2666E8A6002C873B /* Int+extension.swift in Sources */,
+				B1EC70402667A9CD0028E351 /* StationPagesViewController.swift in Sources */,
+				B1A2EFFE2667B6E600CAB5C2 /* StationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,7 +779,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madhatter.finch-app.FinchApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -580,7 +799,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.madhatter.finch-app.FinchApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
